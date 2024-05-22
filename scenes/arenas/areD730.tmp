@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://boqushxgsdw8q"]
+
+[ext_resource type="Texture2D" uid="uid://3l3sfo4mm6dv" path="res://assets/background_texture.png" id="1_a6hiv"]
+[ext_resource type="Script" path="res://scripts/arena.gd" id="1_setbf"]
+[ext_resource type="PackedScene" uid="uid://clqg4087okeku" path="res://scenes/arena_elements/wall.tscn" id="3_7gqdi"]
+[ext_resource type="Script" path="res://scripts/team_spawn.gd" id="3_btqwd"]
+[ext_resource type="PackedScene" uid="uid://d2txevqxb22ks" path="res://scenes/arena_elements/goal.tscn" id="5_0cx52"]
+[ext_resource type="PackedScene" uid="uid://ghcdqc2x32iq" path="res://scenes/arena_elements/player_spawn.tscn" id="6_2o04y"]
+[ext_resource type="PackedScene" uid="uid://c5skyjglj3g2q" path="res://scenes/arena_elements/ball_spawn.tscn" id="7_ahhed"]
+
+[node name="arena_1v1" type="Node2D"]
+script = ExtResource("1_setbf")
+arena_name = "standard 1v1"
+
+[node name="background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(578.5, 323)
+scale = Vector2(19, 11)
+texture = ExtResource("1_a6hiv")
+
+[node name="walls" type="Node2D" parent="."]
+
+[node name="wall" parent="walls" instance=ExtResource("3_7gqdi")]
+position = Vector2(574, -16)
+scale = Vector2(38.4296, 1)
+
+[node name="wall2" parent="walls" instance=ExtResource("3_7gqdi")]
+position = Vector2(575, 664)
+scale = Vector2(38.32, 1)
+
+[node name="team_spawns" type="Node2D" parent="."]
+
+[node name="TeamSpawn" type="Node2D" parent="team_spawns"]
+script = ExtResource("3_btqwd")
+
+[node name="goal" parent="team_spawns/TeamSpawn" instance=ExtResource("5_0cx52")]
+position = Vector2(1182, 324)
+scale = Vector2(0.842097, 32.2742)
+
+[node name="player_spawn" parent="team_spawns/TeamSpawn" instance=ExtResource("6_2o04y")]
+position = Vector2(1056, 286)
+faced_direction = 2
+
+[node name="TeamSpawn2" type="Node2D" parent="team_spawns"]
+script = ExtResource("3_btqwd")
+
+[node name="goal" parent="team_spawns/TeamSpawn2" instance=ExtResource("5_0cx52")]
+position = Vector2(-29, 324)
+scale = Vector2(0.842097, 32.2742)
+
+[node name="player_spawn" parent="team_spawns/TeamSpawn2" instance=ExtResource("6_2o04y")]
+position = Vector2(85, 291)
+faced_direction = 3
+
+[node name="ball_spawns" type="Node2D" parent="."]
+
+[node name="ball_spawn" parent="ball_spawns" instance=ExtResource("7_ahhed")]
+position = Vector2(640, 211)

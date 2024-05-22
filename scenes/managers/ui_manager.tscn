@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmjoxcxhywhpj"]
+
+[ext_resource type="Script" path="res://scripts/managers/ui_manager.gd" id="1_6uefv"]
+[ext_resource type="PackedScene" uid="uid://c0d8pf1hbrrn6" path="res://scenes/ui/scoreboard.tscn" id="2_dql4s"]
+[ext_resource type="PackedScene" uid="uid://c6rg7iufp8m0f" path="res://scenes/ui/application_settings.tscn" id="3_0n4hs"]
+[ext_resource type="PackedScene" uid="uid://bt248h6n23rs6" path="res://scenes/ui/main_menu.tscn" id="3_dvtd4"]
+[ext_resource type="PackedScene" uid="uid://ddvq3snodpfq" path="res://scenes/ui/match_settings.tscn" id="4_bfxbt"]
+
+[node name="ui_manager" type="Node"]
+script = ExtResource("1_6uefv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="scoreboard" parent="CanvasLayer" instance=ExtResource("2_dql4s")]
+
+[node name="application_settings" parent="CanvasLayer" instance=ExtResource("3_0n4hs")]
+
+[node name="match_settings" parent="CanvasLayer" instance=ExtResource("4_bfxbt")]
+
+[node name="main_menu" parent="CanvasLayer" instance=ExtResource("3_dvtd4")]

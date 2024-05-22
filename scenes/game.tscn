@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://bj63r52bmvq01"]
+
+[ext_resource type="Script" path="res://scripts/managers/game_manager.gd" id="1_1m7s1"]
+[ext_resource type="PackedScene" uid="uid://b4nidtgj0ah88" path="res://scenes/managers/arena_manager.tscn" id="1_7ll2o"]
+[ext_resource type="PackedScene" uid="uid://c2lue2tnq7emp" path="res://scenes/managers/player_manager.tscn" id="1_v461w"]
+[ext_resource type="PackedScene" uid="uid://dblbw3hdowivm" path="res://scenes/managers/input_listener.tscn" id="2_ny3sv"]
+[ext_resource type="PackedScene" uid="uid://cmjoxcxhywhpj" path="res://scenes/managers/ui_manager.tscn" id="5_404n2"]
+[ext_resource type="PackedScene" uid="uid://dgw7wwxo1mb3g" path="res://scenes/managers/match_manager.tscn" id="6_8fj6p"]
+
+[node name="Game" type="Node2D"]
+
+[node name="game_manager" type="Node" parent="." groups=["game_manager"]]
+script = ExtResource("1_1m7s1")
+
+[node name="input_listener" parent="game_manager" instance=ExtResource("2_ny3sv")]
+
+[node name="arena_manager" parent="game_manager" instance=ExtResource("1_7ll2o")]
+
+[node name="player_manager" parent="game_manager" instance=ExtResource("1_v461w")]
+unique_name_in_owner = true
+
+[node name="ui_manager" parent="game_manager" instance=ExtResource("5_404n2")]
+
+[node name="match_manager" parent="game_manager" instance=ExtResource("6_8fj6p")]
+
+[connection signal="ready" from="game_manager" to="game_manager" method="_on_ready"]

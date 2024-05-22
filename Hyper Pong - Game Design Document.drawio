@@ -1,0 +1,128 @@
+<mxfile host="Electron" modified="2024-05-21T08:04:30.305Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="fEM8PzyygeaojQgTAh7m" version="24.2.5" type="device">
+  <diagram name="Page-1" id="qMT6bN2ABAr8EhCt4m0C">
+    <mxGraphModel dx="1434" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HtahJcGW6UtRNmLtOk1D-1" value="What&#39;s that?&lt;div&gt;A practice project made with Godot engine templated on a classic game Pong&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#03278A;strokeColor=#005700;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="160" y="90" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HtahJcGW6UtRNmLtOk1D-5" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#03278A;strokeColor=#005700;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="140" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HtahJcGW6UtRNmLtOk1D-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Required features for a base game&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#03278A;strokeColor=#005700;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="160" y="210" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-15" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(255, 255, 255); text-align: center;&quot;&gt;Player controller for moving a&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255); text-align: center; background-color: initial;&quot;&gt;paddle&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Ball moving between paddles and bouncing off of walls&lt;/li&gt;&lt;li&gt;Detector for when the ball passes by an area&lt;/li&gt;&lt;li&gt;Sound effects and music&lt;/li&gt;&lt;li&gt;UI for pause, main menu and settings&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;dropTarget=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="280" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-18" value="&lt;div style=&quot;line-height: 120%; padding-left: 40px;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 120%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;SETTINGS&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 0%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%;&quot;&gt;&lt;ul style=&quot;padding-left: 0px; line-height: 120%;&quot;&gt;&lt;li style=&quot;&quot;&gt;Controls&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Audio&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#03278A;strokeColor=#005700;fontColor=#ffffff;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="185" y="390" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-19" value="&lt;div style=&quot;line-height: 120%; padding-left: 40px;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 120%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;PAUSE&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 0%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%;&quot;&gt;&lt;ul style=&quot;padding-left: 0px; line-height: 120%;&quot;&gt;&lt;li&gt;Resume&lt;/li&gt;&lt;li&gt;Settings&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Quit&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#03278A;strokeColor=#005700;fontColor=#ffffff;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="185" y="490" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-20" value="&lt;div style=&quot;line-height: 120%; padding-left: 40px;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 120%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Main Menu&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 0%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%;&quot;&gt;&lt;ul style=&quot;padding-left: 0px; line-height: 120%;&quot;&gt;&lt;li&gt;Play&lt;/li&gt;&lt;li&gt;Settings&lt;/li&gt;&lt;li&gt;Quit - closes the game&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#03278A;strokeColor=#005700;fontColor=#ffffff;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="185" y="600" width="175" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-21" value="&lt;ul&gt;&lt;li&gt;Allows to select map&lt;/li&gt;&lt;li&gt;Allows to select gamemode&lt;/li&gt;&lt;li&gt;Allows to setup players&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;controls&lt;/li&gt;&lt;li&gt;player (AI or not)&lt;/li&gt;&lt;li&gt;side&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=33;align=left;" parent="1" vertex="1">
+          <mxGeometry x="470" y="600" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-24" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="540" as="sourcePoint" />
+            <mxPoint x="50" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="50" y="540" />
+              <mxPoint y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-25" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="wwbtsTihomMdQyM6YwDD-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="213" y="657" as="sourcePoint" />
+            <mxPoint x="170" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="670" />
+              <mxPoint x="100" y="520" />
+              <mxPoint x="110" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-26" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.02;entryY=0.173;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="wwbtsTihomMdQyM6YwDD-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="213" y="637" as="sourcePoint" />
+            <mxPoint x="440" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="590" />
+              <mxPoint x="400" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-27" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="216" y="545" as="sourcePoint" />
+            <mxPoint x="186" y="423" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="152" y="541" />
+              <mxPoint x="120" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-30" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;Features&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="170" y="810" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-32" value="&lt;ul&gt;&lt;li&gt;Multiplayer&lt;/li&gt;&lt;li&gt;AI players&lt;/li&gt;&lt;li&gt;Gamemodes&lt;/li&gt;&lt;li&gt;Maps&lt;/li&gt;&lt;li&gt;Modifiers&lt;/li&gt;&lt;li&gt;Power-ups&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
+          <mxGeometry x="160" y="860" width="390" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-35" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="510" y="810" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-36" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;Multiplayer&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;for now local only&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="480" y="930" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-37" value="AI with different difficulties&lt;div&gt;right now focus on basic behavior&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1030" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-38" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Gamemodes&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Training&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;solo mode with a wall on the other side&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Team match&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;at least 2 teams with at least 1 player in team&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;possibility to play free for all or 3v1 or 2v1v1&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="410" y="1120" width="390" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-42" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Modifiers&lt;/font&gt;&lt;/b&gt;&lt;div&gt;(enhancements for gamemodes)&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Rumble&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;players get random power-up after x time&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Obstacles&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;a field has additional terrain which interacts with a ball&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;solid block&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;breakable block&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;pass-through block which can modify a balll&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;change its visibility for x seconds / bounces&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;change its speed&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;change its size&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;change its direction&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Sandbox&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;allow player to create a custom presets and save them&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;includes&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;ball speed&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;paddle speed&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;etc...&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="410" y="1330" width="390" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-46" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Power-ups&lt;/font&gt;&lt;/b&gt;&lt;div&gt;(buffs / debuffs which make the game more interesting... hopefully)&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Change a size of a player&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Change a size of a ball&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Duplicate a ball&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Change a speed of a player&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Change a speed of a ball&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Stick a ball to a paddle&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Make a bomb-ball&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;destroys breakable blocks and paddle&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;attach a jet to a ball&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;randomize the direction of a ball mid-air on activation&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="410" y="1731" width="400" height="870" as="geometry" />
+        </mxCell>
+        <mxCell id="wwbtsTihomMdQyM6YwDD-47" value="Power-up can be activated by a player for a certain amount of time (or till the next ball hit)&lt;div&gt;depending on a power-up it will change the behavior of a ball on a next hit&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;e.g.&lt;/div&gt;&lt;div&gt;if a ball should increase its size then it will increase after it bounces off of your paddle&lt;/div&gt;&lt;div&gt;if you want to speed up your paddle it will take effect immediately&lt;/div&gt;&lt;div&gt;if you want to slow down an opponent it will affect a ball and will debuff a next player when they bounce it off&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" parent="1" vertex="1">
+          <mxGeometry x="470" y="1780" width="570" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="nAK5K71Ji6iYyo7UAujS-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="U2oWBrJN7oa8CFiWy30i-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="215" y="1310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U2oWBrJN7oa8CFiWy30i-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;TODO:&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1110" width="330" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="U2oWBrJN7oa8CFiWy30i-2" value="&lt;div&gt;bot should also take into consideration a speed of a ball&lt;/div&gt;&lt;div&gt;as well as their own speed before deciding to move towards ball&#39;s future location (so if a closest ball moves too fast to reach and there are more than 1 balls, bot will ignore that one and try to secure next ball instead)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1470" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="U2oWBrJN7oa8CFiWy30i-4" value="scoreboard lacks teamscore displayed above the field.&lt;div&gt;scoreboard isn&#39;t populated in correct order&amp;nbsp;&lt;/div&gt;&lt;div&gt;(score should be displayed on the same side as team connected to it)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1630" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="nAK5K71Ji6iYyo7UAujS-4" value="UI for selecting an arena&lt;div&gt;bots difficulty level which increases their view range / movement speed&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1310" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="olV1CMSZra6TE9c_RL3Y-1" value="the further from center of a paddle ball bounces off of, the more its angle should be changed up to maximum range allowed for specific direction the paddle faces" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1800" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="olV1CMSZra6TE9c_RL3Y-2" value="bots should have multiple states of &quot;thinking&quot; to allow future expansion of their behavior as well as adding a simple error in positioning which will make the bot possible to beat" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1970" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Pi0Ag8V1H4i1oZQ9MShE-1" value="simulation system / module for bots to predict few iterations of ball&#39;s movement in order to:&lt;div&gt;visualize the trajectory of the ball&lt;/div&gt;&lt;div&gt;adjust bot&#39;s position according to future position of the ball&lt;/div&gt;&lt;div&gt;so the bot will be ahead of ball instead of behind&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2150" width="350" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

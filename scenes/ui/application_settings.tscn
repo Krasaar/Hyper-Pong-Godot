@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6rg7iufp8m0f"]
+
+[ext_resource type="Texture2D" uid="uid://d26qwhd1rxtri" path="res://assets/restore_arrow.png" id="1_clo1x"]
+[ext_resource type="Script" path="res://scripts/ui/application_settings.gd" id="1_xwar2"]
+
+[node name="application_settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xwar2")
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.172549)
+
+[node name="sound_label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 184.0
+offset_right = 225.0
+offset_bottom = 284.0
+text = "Audio"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="sound" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 184.0
+offset_right = 525.0
+offset_bottom = 284.0
+
+[node name="return_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 585.0
+offset_right = 201.0
+offset_bottom = 634.0
+text = "Return"
+
+[node name="default_audio" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 557.0
+offset_top = 214.0
+offset_right = 597.0
+offset_bottom = 254.0
+tooltip_text = "Restores default value"
+texture_normal = ExtResource("1_clo1x")
+
+[connection signal="value_changed" from="sound" to="." method="_on_sound_value_changed"]
+[connection signal="button_up" from="return_button" to="." method="_on_return_button_button_up"]
+[connection signal="button_up" from="default_audio" to="." method="_on_default_audio_button_up"]

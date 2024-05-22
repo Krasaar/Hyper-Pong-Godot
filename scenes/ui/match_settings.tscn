@@ -1,0 +1,86 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddvq3snodpfq"]
+
+[ext_resource type="Script" path="res://scripts/ui/match_settings.gd" id="1_idox0"]
+
+[node name="match_settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_idox0")
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12549, 0.219608, 0.47451, 1)
+
+[node name="arena_display" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 161.0
+offset_top = 100.0
+offset_right = 971.0
+offset_bottom = 562.0
+
+[node name="background2" type="ColorRect" parent="arena_display"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.388235, 0.109804, 0.333333, 1)
+
+[node name="return_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 577.0
+offset_right = 189.0
+offset_bottom = 628.0
+text = "Return"
+
+[node name="previous_arena_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 22.0
+offset_right = 405.0
+offset_bottom = 83.0
+text = "<-"
+
+[node name="next_arena_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 732.0
+offset_top = 22.0
+offset_right = 889.0
+offset_bottom = 83.0
+text = "->"
+
+[node name="start_match_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 947.0
+offset_top = 577.0
+offset_right = 1112.0
+offset_bottom = 628.0
+text = "Start"
+
+[node name="arena_name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 34.0
+offset_right = 715.0
+offset_bottom = 76.0
+text = "Selected_arena_name"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="button_up" from="return_button" to="." method="_on_return_button_button_up"]
+[connection signal="button_up" from="previous_arena_button" to="." method="_on_previous_arena_button_button_up"]
+[connection signal="button_up" from="next_arena_button" to="." method="_on_next_arena_button_button_up"]
+[connection signal="button_up" from="start_match_button" to="." method="_on_start_match_button_button_up"]

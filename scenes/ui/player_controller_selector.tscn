@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://crbyvl1hged31"]
+
+[ext_resource type="Script" path="res://scripts/controllers/player_controller_selector.gd" id="1_f7mt3"]
+[ext_resource type="Texture2D" uid="uid://b2lbxa05p4hah" path="res://assets/controller_selector.png" id="1_hiped"]
+[ext_resource type="PackedScene" uid="uid://ctpo2jdvadhj8" path="res://scenes/ui/movement_binder_control.tscn" id="3_ccfo8"]
+
+[node name="player_controller_selector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f7mt3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_hiped")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="player_selector" type="ColorRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 0)
+
+[node name="keybinds" type="HBoxContainer" parent="HBoxContainer/player_selector"]
+layout_mode = 0
+offset_top = 524.0
+offset_right = 578.0
+offset_bottom = 648.0
+
+[node name="movement_binder_control" parent="HBoxContainer/player_selector/keybinds" instance=ExtResource("3_ccfo8")]
+layout_mode = 2
+movement_direction = 3
+
+[node name="movement_binder_control2" parent="HBoxContainer/player_selector/keybinds" instance=ExtResource("3_ccfo8")]
+layout_mode = 2
+movement_direction = 1
+
+[node name="movement_binder_control3" parent="HBoxContainer/player_selector/keybinds" instance=ExtResource("3_ccfo8")]
+layout_mode = 2
+movement_direction = 0
+
+[node name="movement_binder_control4" parent="HBoxContainer/player_selector/keybinds" instance=ExtResource("3_ccfo8")]
+layout_mode = 2
+movement_direction = 2
+
+[node name="bot_selector" type="ColorRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 0.666667)
+
+[connection signal="gui_input" from="HBoxContainer/player_selector" to="." method="_on_player_selector_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/bot_selector" to="." method="_on_bot_selector_gui_input"]

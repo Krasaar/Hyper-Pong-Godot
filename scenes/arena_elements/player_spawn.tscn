@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ghcdqc2x32iq"]
+
+[ext_resource type="Script" path="res://scripts/arena_elements/player_spawn.gd" id="1_7jtu5"]
+
+[node name="player_spawn" type="Node2D"]
+script = ExtResource("1_7jtu5")

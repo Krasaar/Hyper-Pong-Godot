@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccx2gmyopkktf"]
+
+[ext_resource type="Script" path="res://scripts/ui/player_score.gd" id="1_x0yik"]
+
+[node name="player_score" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x0yik")
+
+[node name="score_info" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_constants/separation = 75
+
+[node name="padding" type="Control" parent="score_info"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_stretch_ratio = 0.28
+
+[node name="player_name" type="Label" parent="score_info"]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "player_name"
+
+[node name="score" type="Label" parent="score_info"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "player score"

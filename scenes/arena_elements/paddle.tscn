@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://jxpaki72sytd"]
+
+[ext_resource type="Script" path="res://scripts/arena_elements/paddle.gd" id="1_sq8jx"]
+[ext_resource type="Texture2D" uid="uid://b1lktafs1164x" path="res://assets/paddle_texture_0.png" id="2_mu6wh"]
+[ext_resource type="Texture2D" uid="uid://ujd22jd6fm12" path="res://assets/paddle_texture_1.png" id="3_t66dc"]
+[ext_resource type="Texture2D" uid="uid://bwuoyivp7ovot" path="res://assets/paddle_texture_2.png" id="4_d2vxm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vuqj6"]
+size = Vector2(16, 103)
+
+[node name="paddle" type="CharacterBody2D"]
+script = ExtResource("1_sq8jx")
+
+[node name="collider" type="CollisionShape2D" parent="."]
+position = Vector2(0, 19.5)
+shape = SubResource("RectangleShape2D_vuqj6")
+one_way_collision = true
+debug_color = Color(0, 0.6, 0.701961, 0.623529)
+
+[node name="paddle_side_0" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -27)
+rotation = 1.5708
+texture = ExtResource("2_mu6wh")
+
+[node name="paddle_resizable" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-7.9049e-06, 19.1837)
+rotation = 1.5708
+scale = Vector2(5.22704, -0.992375)
+texture = ExtResource("3_t66dc")
+
+[node name="paddle_side_1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 65)
+rotation = 1.5708
+texture = ExtResource("4_d2vxm")

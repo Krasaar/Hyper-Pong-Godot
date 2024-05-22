@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctpo2jdvadhj8"]
+
+[ext_resource type="Texture2D" uid="uid://nlc7o5d7bv4g" path="res://assets/arrow.png" id="1_na8wa"]
+[ext_resource type="Script" path="res://scripts/controllers/movement_binder_control.gd" id="1_qgxe4"]
+
+[node name="movement_binder_control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_qgxe4")
+movement_direction = -1
+
+[node name="direction_arrow" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026
+anchor_top = 0.142
+anchor_right = 0.398
+anchor_bottom = 0.804
+offset_right = -3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(214.272, 214.488)
+texture = ExtResource("1_na8wa")
+stretch_mode = 5
+
+[node name="dim" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.352941)
+
+[node name="keycode" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.57
+anchor_top = 0.3
+anchor_right = 0.96
+anchor_bottom = 0.713
+offset_left = -73.0
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "KEYCODE"
+vertical_alignment = 1
+
+[connection signal="item_rect_changed" from="." to="." method="_on_item_rect_changed"]
+[connection signal="resized" from="direction_arrow" to="." method="_on_direction_arrow_resized"]
+[connection signal="gui_input" from="dim" to="." method="_on_dim_gui_input"]

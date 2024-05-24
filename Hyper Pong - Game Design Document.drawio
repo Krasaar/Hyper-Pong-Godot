@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-05-21T08:04:30.305Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="fEM8PzyygeaojQgTAh7m" version="24.2.5" type="device">
+<mxfile host="Electron" modified="2024-05-22T19:57:21.737Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="t_Dndyf4XkE7B8YiRpWN" version="24.2.5" type="device">
   <diagram name="Page-1" id="qMT6bN2ABAr8EhCt4m0C">
     <mxGraphModel dx="1434" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -119,8 +119,14 @@
         <mxCell id="olV1CMSZra6TE9c_RL3Y-2" value="bots should have multiple states of &quot;thinking&quot; to allow future expansion of their behavior as well as adding a simple error in positioning which will make the bot possible to beat" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
           <mxGeometry x="40" y="1970" width="350" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="Pi0Ag8V1H4i1oZQ9MShE-1" value="simulation system / module for bots to predict few iterations of ball&#39;s movement in order to:&lt;div&gt;visualize the trajectory of the ball&lt;/div&gt;&lt;div&gt;adjust bot&#39;s position according to future position of the ball&lt;/div&gt;&lt;div&gt;so the bot will be ahead of ball instead of behind&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+        <mxCell id="Pi0Ag8V1H4i1oZQ9MShE-1" value="simulation system / module for bots to predict few iterations of ball&#39;s movement in order to:&lt;div&gt;visualize the trajectory of the ball&lt;/div&gt;&lt;div&gt;adjust bot&#39;s position according to future position of the ball&lt;/div&gt;&lt;div&gt;so the bot will be ahead of ball instead of behind&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
           <mxGeometry x="40" y="2150" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e3KDFLJqZg3EETKTq75n-1" value="Hyper Pong ver. 2.0&lt;div&gt;Instead of creating a separate project for the second challange (breakout / arkanoid game) implement the logic for bricks which will bounce the ball off grant player additional points for doing damage (depending on game mode, scoring a goal should perform different logic e.g. it can substract health from opponent or increase points by a higher number than 1)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2320" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e3KDFLJqZg3EETKTq75n-2" value="create one or two gamemodes which use bricks&lt;div&gt;(bricks can respawn in allowed area, bricks are one-time and winning condition is there are no bricks or someone lost all health)&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2480" width="350" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

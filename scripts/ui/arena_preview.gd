@@ -4,6 +4,7 @@ var area_size : Vector2
 
 func set_background(background : Sprite2D):
 	add_child(background.duplicate())
+	var rec = background.get_rect()
 	area_size = background.texture.get_size() * background.scale
 	return
 
@@ -17,6 +18,19 @@ func set_walls(walls):
 		var wall_placement : Sprite2D = Sprite2D.new()
 		wall_placement.texture = WALL_SMALL
 		wall_placement.transform = wall.transform
+		wall_placement.region_enabled = true
+		
+		var goal_size = Vector2.ONE
+		
+		if wall_placement.transform.get_scale().aspect() < 1.0:
+			goal_size.y = int(wall_placement.scale.y) + 1
+		else:
+			goal_size.x = int(wall_placement.scale.x) + 1
+			
+		wall_placement.scale = Vector2.ONE
+		
+		wall_placement.region_rect.size = GOAL_NET.get_size() * goal_size
+		
 		add_child(wall_placement)
 	return
 	
@@ -28,6 +42,19 @@ func set_team_spawns(team_spawns):
 		var goal_placement : Sprite2D = Sprite2D.new()
 		goal_placement.texture = GOAL_NET
 		goal_placement.transform = team_spawn.get_goal().transform
+		goal_placement.region_enabled = true
+		
+		var goal_size = Vector2.ONE
+		
+		if goal_placement.transform.get_scale().aspect() < 1.0:
+			goal_size.y = int(goal_placement.scale.y) + 1
+		else:
+			goal_size.x = int(goal_placement.scale.x) + 1
+			
+		goal_placement.scale = Vector2.ONE
+		
+		goal_placement.region_rect.size = GOAL_NET.get_size() * goal_size
+		# goal_placement.region_rect.size = GOAL_NET.get_size() * Vector2(int(goal_placement.scale.x), int(goal_placement.scale.y))
 		add_child(goal_placement)
 		
 		for player_spawn in team_spawn.player_spawns:

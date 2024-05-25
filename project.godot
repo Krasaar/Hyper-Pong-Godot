@@ -17,7 +17,6 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/mode=4
 window/stretch/mode="viewport"
 window/vsync/vsync_mode=0
 mouse_cursor/custom_image="res://assets/cursors/krzysiu_nekoarc_no bh.png"

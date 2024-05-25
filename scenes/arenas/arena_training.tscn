@@ -14,24 +14,24 @@ script = ExtResource("1_kgwpv")
 arena_name = "Training Grounds"
 
 [node name="background" type="Sprite2D" parent="."]
-position = Vector2(587, 323.5)
-scale = Vector2(19, 11)
+position = Vector2(578.5, 319.75)
+scale = Vector2(18.7344, 10.8828)
 texture = ExtResource("1_dxhov")
 
 [node name="walls" type="Node2D" parent="."]
 
 [node name="wall" parent="walls" instance=ExtResource("2_qdefj")]
-position = Vector2(579, -17)
-scale = Vector2(39.5449, -1.05061)
+position = Vector2(578, -14)
+scale = Vector2(37.5, 0.873)
 
 [node name="wall2" parent="walls" instance=ExtResource("2_qdefj")]
-position = Vector2(1166, 325)
+position = Vector2(1165, 322)
 rotation = -3.14159
-scale = Vector2(0.882772, -22.1965)
+scale = Vector2(-0.809729, 20.3436)
 
 [node name="wall3" parent="walls" instance=ExtResource("2_qdefj")]
-position = Vector2(559, 664)
-scale = Vector2(38.12, 1)
+position = Vector2(578, 658)
+scale = Vector2(37.5, 0.873)
 
 [node name="team_spawns" type="Node2D" parent="."]
 
@@ -40,10 +40,11 @@ script = ExtResource("4_c8l03")
 
 [node name="player_spawn" parent="team_spawns/TeamSpawn" instance=ExtResource("5_704cw")]
 position = Vector2(22, 317)
+faced_direction = 3
 
 [node name="goal" parent="team_spawns/TeamSpawn" instance=ExtResource("6_m5jov")]
-position = Vector2(-41, 333)
-scale = Vector2(1.17091, 35.7813)
+position = Vector2(-33, 324)
+scale = Vector2(1.16675, 32.4034)
 
 [node name="ball_spawns" type="Node2D" parent="."]
 

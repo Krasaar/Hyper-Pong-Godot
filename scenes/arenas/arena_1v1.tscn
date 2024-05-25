@@ -21,8 +21,8 @@ texture = ExtResource("1_a6hiv")
 [node name="walls" type="Node2D" parent="."]
 
 [node name="wall" parent="walls" instance=ExtResource("3_7gqdi")]
-position = Vector2(574, -16)
-scale = Vector2(38.4296, 1)
+position = Vector2(579, -14)
+scale = Vector2(38.0033, 0.873878)
 
 [node name="wall2" parent="walls" instance=ExtResource("3_7gqdi")]
 position = Vector2(575, 664)
